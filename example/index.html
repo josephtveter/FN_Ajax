@@ -2,13 +2,19 @@
 	<head>
 		<script src="FN_Ajax.js"></script>
 		<script>
-			debugger;
-			ajax({url: "yourUrlhere"}).done(function(response)
+			// Here are a few urls from cdn's to play with for some better known libraries.
+			var greensock_URL = "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js";
+			var jquery_URL = "https://code.jquery.com/jquery-3.1.0.min.js";
+			var knockout_URL = "https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js";
+
+			ajax({url: knockout_URL, dataType: 'text'}).done(function(response)
 			{
-				debugger;
+				var fullResponse = arguments;
+				console.info("Your response is here!"+ response);
 			}).fail(function(errorObj)
 			{
-				debugger;
+				var fullErrors = arguments;
+				console.info("Your error message is here!");
 			});
 		</script>
 	</head>

@@ -533,7 +533,7 @@
 					catch(e)
 					{
 						var message = typeof e == "string" ? e : JSON.stringify(e);
-						log.warn(message+" ---- fnAjax JSON.parse Fail: "+responseText);
+						console.warn(message+" ---- fnAjax JSON.parse Fail: "+responseText);
 						response = responseText;
 					}
 				break;

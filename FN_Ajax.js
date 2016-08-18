@@ -1,8 +1,8 @@
 /*
 	Created by: Joseph Tveter
 	email: josephtveter@gmail.com
-	git: https://github.com/josephtveter/fn_deferred
-	GPL: Use and Enjoy.  This is an example of my work. I am always open to hear about new employment oppertunities.
+	git: https://github.com/josephtveter/FN_Ajax
+	GPL: Use and edit and Enjoy.  This is an example of my work.
 
 	Purpose:
 		This library is to give Promise Object support.  If your site needs to support promises but also needs to support IE, so you can not use window.Promise.  Jquery is nice, but it is heavy.  FN_Deferred weighs in about 3kb.  FN_Deferred is a great stable micro library. Give it a whirl.   
@@ -533,7 +533,7 @@
 					catch(e)
 					{
 						var message = typeof e == "string" ? e : JSON.stringify(e);
-						log.warn(message+" ---- fnAjax JSON.parse Fail: "+responseText);
+						console.warn(message+" ---- fnAjax JSON.parse Fail: "+responseText);
 						response = responseText;
 					}
 				break;
